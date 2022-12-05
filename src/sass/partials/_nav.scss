@@ -1,0 +1,141 @@
+nav {
+    top: 0;
+    padding: 21px 0 21px 21px;
+    width: 100%;
+    background: #5ABCB9;
+  }
+  
+  nav div {
+    display: inline;
+  }
+  
+  .brand {
+    font-size: 24px;
+  }
+  
+  .menu {
+    position: relative;
+    margin-top: 5px;
+    float: right;
+    list-style-type: none;
+    transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+  
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .menu li {
+    display: inline;
+    cursor: pointer;
+    margin-right: 3rem;
+  }
+  
+  .menu li:hover {
+    text-decoration: underline;
+  }
+  
+  .menu li:hover::before {
+    width: 49px;
+  }
+  
+  .menu li:nth-child(3):hover::before {
+    width: 63px;
+  }
+  
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  nav label {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    background: #63E2C6;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  nav > label > span {
+    display: block;
+    margin: 4px auto;
+    height: 4px;
+    width: 25px;
+    border-radius: 1px;
+    background: #fff;
+    transition: 0.5s;
+  }
+  
+  nav > label > span:nth-child(1) {
+    margin-top: 25px;
+  }
+  
+  input[type=checkbox]:checked ~ .menu {
+    top: 0;
+  }
+  
+  input[type=checkbox]:checked ~ label span {
+    background: #fff;
+  }
+  
+  input[type=checkbox]:checked ~ label span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  input[type=checkbox]:checked ~ label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  input[type=checkbox]:checked ~ label span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .logbtn {
+      background: #63E2C6;
+      margin-left: 1rem;
+      margin-right: 0 !important;
+      padding: 1.55rem 3.45rem !important;
+      text-transform: uppercase;
+      transition: .5s;
+  }
+
+  .logbtn:hover {
+      background: #14dbb0;
+      text-decoration: none !important;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      top: -100vh;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: #63E2C6;
+    }
+    .menu li {
+      margin: 20px;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    nav .hamburger {
+      display: block;
+    }
+    .logbtn {
+        background: #5ABCB9;
+        margin-right: 0.5rem !important;
+        margin-top: 2rem !important;
+        padding: 1rem 4rem !important;
+    }
+  }
