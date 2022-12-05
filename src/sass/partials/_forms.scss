@@ -1,0 +1,53 @@
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 1.5rem;
+    resize: vertical;
+  }
+  
+  fieldset {
+      border: none;
+  }
+
+  form {
+      margin: 0 auto;
+      width: 50%;
+  }
+
+  .form-container {
+      margin-top: 2rem;
+  }
+
+  textarea {
+    font-family: 'Work Sans', sans-serif;
+      min-height: 200px;
+  }
+
+  .button-wrapper {
+      margin-top: 1rem;
+  }
+
+  .register {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: .5s;
+  }
+
+  .register:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 1280px) {
+    form {
+        width: 100%;
+    }
+  }
