@@ -5,28 +5,29 @@
   }
 
   .card h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .card img {
-      height: auto;
-      width: 25%;
+    height: auto;
+    width: 25%;
   }
 
   .card p {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 
   .card__content {
-      background: #fff;
+    background: rgba(48, 41, 94, 0.3);
     padding: 2.5rem 3rem 4rem;
+    width: 100%;
   }
 
   @media (max-width: 1024px) {
-      .card {
-          flex-direction: column;
-      }
-      .card img {
-          width: 100%;
-      }
-  }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+    }
+}
