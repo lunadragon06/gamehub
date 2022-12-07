@@ -7,6 +7,7 @@ function GameItem({ id, name, images }) {
 		    <Link to={`detail/${id}`}>
 				<img src={images[0].src} alt={name} width="100%" />
 				<h2>{name}</h2>
+				<p>$ </p>
 		    </Link>
 			</article>
 	);
