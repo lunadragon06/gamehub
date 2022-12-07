@@ -16,11 +16,18 @@
   }
   
   body {
-    background-color: #e5edef;
+    background: #181436;
+    color: white;
     margin: 0;
     font-family: 'Work Sans', sans-serif;
   }
 
   .container {
-      padding: 1.25rem;
+      padding: 1.25rem 12.75rem;
   }
+
+  @media (max-width: 1600px) {
+  .container {
+    padding: 1.25rem;
+  }
+}
