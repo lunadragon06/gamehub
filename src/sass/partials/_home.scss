@@ -1,12 +1,12 @@
 .games {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin-top: 2rem;
 }
 
 .game {
-    background: #fff;
+    background: rgba(48, 41, 94, 0.3);
     margin-bottom: 3rem;
     padding: 0 0 1rem;
     transition: .5s;
@@ -17,12 +17,17 @@
 }
 
 h2 {
-    color: #000;
+    font-size: 18px;
+    font-weight: normal;
     padding: .5rem 1rem 1.5rem;
 }
 
+p {
+    padding: .5rem 1rem 1rem;
+}
+
 img {
-    height: 500px;
+    height: 375px;
     object-fit: cover;
 }
 
@@ -33,7 +38,7 @@ img {
 }
 
 .loader {
-    background: #fff;
+    background: #000;
 }
 
 .error-message, .form-error, .invalid {
@@ -44,19 +49,19 @@ img {
 
 @media (max-width: 1400px) {
     img {
-        height: 575px;
+        height: 450px;
     }
 }
 
 @media (max-width: 1280px) {
     img {
-        height: 550px;
+        height: 400px;
     }
 }
 
 @media (max-width: 1024px) {
     img {
-        height: 600px;
+        height: 450px;
     }
 }
 
