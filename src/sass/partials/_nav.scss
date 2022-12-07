@@ -1,8 +1,14 @@
+.logo {
+  height: 20px;
+  margin-right: 1rem;
+  width: 35px;
+}
+
 nav {
     top: 0;
     padding: 21px 0 21px 21px;
     width: 100%;
-    background: #5ABCB9;
+    background: #0F0C26;
   }
   
   nav div {
@@ -10,6 +16,7 @@ nav {
   }
   
   .brand {
+    display: inline-block;
     font-size: 24px;
   }
   
@@ -57,7 +64,7 @@ nav {
     right: 0;
     height: 70px;
     width: 70px;
-    background: #63E2C6;
+    background: #B200B2;
     cursor: pointer;
     z-index: 1;
   }
@@ -97,7 +104,7 @@ nav {
   }
 
   .logbtn {
-      background: #63E2C6;
+      background: #B200B2;
       margin-left: 1rem;
       margin-right: 0 !important;
       padding: 1.55rem 3.45rem !important;
@@ -106,11 +113,18 @@ nav {
   }
 
   .logbtn:hover {
-      background: #14dbb0;
+      background: #F205CB;
       text-decoration: none !important;
   }
   
   @media (max-width: 768px) {
+    .brand {
+      display: none;
+    }
+    .logo {
+      height: 25px;
+      width: 45px;
+    }
     .menu {
       position: absolute;
       display: flex;
@@ -122,7 +136,7 @@ nav {
       left: 0;
       height: 100vh;
       width: 100%;
-      background: #63E2C6;
+      background: #2A1A40;
     }
     .menu li {
       margin: 20px;
@@ -133,7 +147,7 @@ nav {
       display: block;
     }
     .logbtn {
-        background: #5ABCB9;
+        background: #B200B2;
         margin-right: 0.5rem !important;
         margin-top: 2rem !important;
         padding: 1rem 4rem !important;
