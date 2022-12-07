@@ -1,4 +1,5 @@
 import AuthContext from "../../context/authContext";
+import logo from "../../assets/logo.svg";
 import {  NavLink, useNavigate  } from "react-router-dom";
 import { useContext } from "react";
 
@@ -22,7 +23,8 @@ function Nav() {
 
 	return (
     <nav>
-      <a className="brand" href="/">GameHub</a>
+        <img className="logo" src={logo} alt="" />
+        <a className="brand" href="/"> GameHub</a>
         <input type="checkbox" id="nav" />
         <label className="hamburger" htmlFor="nav">
           <span />
