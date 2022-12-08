@@ -7,7 +7,8 @@ export default function AdminPage() {
 const [auth] = useContext(AuthContext);
     // prevent unlogged user to get access to admin page
     if(!auth || auth === null) {
-		// useHistory or useNavigate didn't work, which is why I used this method
+		// useHistory or useNavigate didn't work, 
+		// which is why I used this method
         window.location.href = "/login";
     }
 
