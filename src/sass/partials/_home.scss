@@ -7,7 +7,7 @@
 
 .game {
     background: rgba(48, 41, 94, 0.3);
-    margin-bottom: 3rem;
+    margin-bottom: 1.25rem;
     padding: 0 0 1rem;
     transition: .5s;
 }
@@ -30,7 +30,7 @@
     padding: .5rem 1rem 1rem;
 } 
 
-.category {
+.category, .card__tag {
     background: #B200B2;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -39,6 +39,11 @@
     margin: 1.5rem 0rem 1rem;
     padding: .75rem 1.5rem;
     text-transform: uppercase;
+}
+
+.card__tag {
+    display: inline-block;
+    margin-top: 2.5rem;
 }
 
 h2 {
