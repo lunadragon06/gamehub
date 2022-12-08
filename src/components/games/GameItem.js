@@ -17,8 +17,7 @@ function GameItem({ id, name, images, prices }) {
 					<span className="game__col-um">
 					    <p>$</p>
 						<p> 
-							{prices.price}
-							{/* {String(prices.price).parseFloat().toFixed(2)} */}
+							{insertDecimal(prices.price)}
 						</p>
 					</span>
                 </div>
