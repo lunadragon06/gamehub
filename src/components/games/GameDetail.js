@@ -56,8 +56,8 @@ function GameDetail() {
 			    <img src={game.images[0].src} alt={game.name} />
 				<article className="card__content">
 				    <Heading content={game.name} />
-			        <p dangerouslySetInnerHTML={{ __html: game.short_description }} />
-					<p><b>Genre: </b>{game.categories[0].name}</p>
+			        <p dangerouslySetInnerHTML={{ __html: game.description }} />
+					<span className="card__tag">{game.categories[0].name}</span>
 				</article>
 			</section>
 		</>
