@@ -26,6 +26,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
       </Routes>
       </div>
+      <footer>© 2020-2022</footer>
     </Router>
     </AuthProvider>
   );
