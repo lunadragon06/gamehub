@@ -13,7 +13,7 @@
 }
 
 .game:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .game__col {
@@ -27,16 +27,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: .5rem 1rem 1rem;
 } 
 
+.category {
+    background: #B200B2;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    margin: 1.5rem 0rem 1rem;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+}
+
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
     padding: .5rem 1rem 1.5rem;
 }
 
-p {
-    padding: .5rem 1rem 1rem;
+.pricetag {
+    font-size: 18px;
 }
 
 img {
@@ -56,11 +68,14 @@ img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    display: inline-block;
     border-top: 3px solid #FFF;
     border-right: 3px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    display: inline-block;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
   }
   
   @keyframes rotation {
