@@ -1,13 +1,27 @@
 import PropTypes from "prop-types";
+import SubHeading from "../layout/typography/SubHeading";
 import { Link } from "react-router-dom";
 
-function GameItem({ id, name, images }) {
+function insertDecimal(num) {
+	return (num / 100).toFixed(2);
+ } 
+ console.log(insertDecimal(1982));
+
+function GameItem({ id, name, images, prices }) {
 	return (
 		<article className="game">
 		    <Link to={`detail/${id}`}>
 				<img src={images[0].src} alt={name} width="100%" />
-				<h2>{name}</h2>
-				<p>$ </p>
+				<div className="game__col">
+                    <SubHeading subcontent={name} />
+					<span className="game__col-um">
+					    <p>$</p>
+						<p> 
+							{prices.price}
+							{/* {String(prices.price).parseFloat().toFixed(2)} */}
+						</p>
+					</span>
+                </div>
 		    </Link>
 			</article>
 	);
