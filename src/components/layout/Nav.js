@@ -2,6 +2,9 @@ import AuthContext from "../../context/authContext";
 import logo from "../../assets/logo.svg";
 import {  NavLink, useNavigate  } from "react-router-dom";
 import { useContext } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 function Nav() {
   const [auth, setAuth] = useContext(AuthContext);
@@ -45,14 +48,14 @@ function Nav() {
           </li>
           <li onClick={logout} className="logbtn">
             <NavLink to="/" onClick="onLinkClick()">
-              Logout
+              <FontAwesomeIcon icon={faRightFromBracket} style={{ fontSize: '1.4rem', }} />
             </NavLink>
           </li>
 				  </>
 			    ) : (
           <li className="logbtn">
 				    <NavLink to="/login" onClick="onLinkClick()">
-              Login
+              <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.4rem', }}/>
             </NavLink>
           </li>
 			    )}
