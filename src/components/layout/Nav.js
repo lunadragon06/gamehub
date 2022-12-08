@@ -26,8 +26,10 @@ function Nav() {
 
 	return (
     <nav>
-        <img className="logo" src={logo} alt="" />
-        <a className="brand" href="/"> GameHub</a>
+        <a className="brand" href="/">
+          <img className="logo" src={logo} alt="" /> 
+          <span className="wordmark">GameHub</span>
+        </a>
         <input type="checkbox" id="nav" />
         <label className="hamburger" htmlFor="nav">
           <span />
@@ -47,14 +49,14 @@ function Nav() {
 					  <NavLink to="/admin" onClick="onLinkClick()">Admin</NavLink> 
           </li>
           <li onClick={logout} className="logbtn">
-            <NavLink to="/" onClick="onLinkClick()">
+            <NavLink to="/" onClick="onLinkClick()" id="userlink">
               <FontAwesomeIcon icon={faRightFromBracket} style={{ fontSize: '1.4rem', }} />
             </NavLink>
           </li>
 				  </>
 			    ) : (
           <li className="logbtn">
-				    <NavLink to="/login" onClick="onLinkClick()">
+				    <NavLink to="/login" onClick="onLinkClick()" id="userlink">
               <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.4rem', }}/>
             </NavLink>
           </li>
