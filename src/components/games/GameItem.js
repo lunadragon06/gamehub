@@ -10,6 +10,7 @@ function insertDecimal(num) {
 console.log(insertDecimal(1982));
 
 function GameItem({ id, name, images, prices }) {
+
 	return (
 		<article className="game">
 		    <Link to={`detail/${id}`}>
@@ -17,16 +18,16 @@ function GameItem({ id, name, images, prices }) {
 				<div className="game__col">
                     <SubHeading subcontent={name} />
 					<span className="game__col-um">
-					    <p>
-							<b>$</b> {insertDecimal(prices.price)}
-						</p>
-						<p> 
-						    &#9829;
+					    <b>
+						    $
+						</b>
+						<p className="pricetag">
+						    {insertDecimal(prices.price)}
 						</p>
 					</span>
                 </div>
 		    </Link>
-			</article>
+		</article>
 	);
 }
 
