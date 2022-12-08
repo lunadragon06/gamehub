@@ -47,8 +47,8 @@ function GameList() {
 		    <Heading content="Game List" />
 		    <section className="games">
 			    {games.map(function (game) {
-				    const { id, name, images } = game;
-				    return <GameItem key={id} id={id} name={name} images={images} />;
+				    const { id, name, images, prices } = game;
+				    return <GameItem key={id} id={id} name={name} images={images} prices={prices} />;
 			    })}
 		    </section>
 		</>
