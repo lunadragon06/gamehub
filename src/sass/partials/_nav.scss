@@ -4,17 +4,27 @@
   width: 35px;
 }
 
+/* increase the clickable area of an anchor */
+#userlink {
+  display: inline-block;
+  position: relative;
+  padding: 2rem 2rem 1.3rem;
+  margin: -2rem -2.3rem 0;
+}
+
 nav {
+    height: 70px;
+    letter-spacing: 2.5px;
     padding: 21px 0 21px 21px;
     width: 100%;
     background: #0F0C26;
-  }
+}
   
   nav div {
     display: inline;
   }
   
-  .brand {
+  .wordmark {
     display: inline-block;
     font-size: 24px;
   }
@@ -63,7 +73,7 @@ nav {
     right: 0;
     height: 70px;
     width: 70px;
-    background: #B200B2;
+    background: rgba(61, 38, 211, 0.75);
     cursor: pointer;
     z-index: 1;
   }
@@ -103,7 +113,7 @@ nav {
   }
 
   .logbtn {
-      background: #B200B2;
+    background: rgba(61, 38, 211, 0.75);
       margin-left: 1rem;
       margin-right: 0 !important;
       padding: 1.9rem 2.3rem 1.3rem !important;
@@ -112,12 +122,12 @@ nav {
   }
 
   .logbtn:hover {
-      background: #F205CB;
+      background: #8C0876;
       text-decoration: none !important;
   }
   
   @media (max-width: 768px) {
-    .brand {
+    .wordmark {
       display: none;
     }
     .logo {
@@ -135,7 +145,7 @@ nav {
       left: 0;
       height: 100vh;
       width: 100%;
-      background: #2A1A40;
+      background: rgba(61, 38, 211, 1);
     }
     .menu li {
       margin: 20px;
@@ -146,9 +156,13 @@ nav {
       display: block;
     }
     .logbtn {
-        background: #B200B2;
+      background: #8C0876;
         margin-right: 0.5rem !important;
         margin-top: 2rem !important;
         padding: 1rem 4rem !important;
+    }
+    #userlink {
+      margin: -1rem -4rem;
+      padding: 1.5rem 6rem;
     }
   }
