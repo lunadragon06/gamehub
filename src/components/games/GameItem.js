@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function insertDecimal(num) {
 	return (num / 100).toFixed(2);
 } 
-// to test if it's working as expected 
+// to test if it's working as desired and expected 
 console.log(insertDecimal(1982));
 
 function GameItem({ id, name, images, prices }) {
@@ -17,9 +17,11 @@ function GameItem({ id, name, images, prices }) {
 				<div className="game__col">
                     <SubHeading subcontent={name} />
 					<span className="game__col-um">
-					    <p>$</p>
+					    <p>
+							<b>$</b> {insertDecimal(prices.price)}
+						</p>
 						<p> 
-							{insertDecimal(prices.price)}
+						    &#9829;
 						</p>
 					</span>
                 </div>
