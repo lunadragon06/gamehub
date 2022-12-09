@@ -23,7 +23,7 @@ I used [JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-au
 - [SASS](https://sass-lang.com/)
 - [WooCommerce](https://wordpress.org/plugins/woocommerce/) (API json only) 
 ## 👩‍💻 Backend
-In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above, try to replace the following code in your ``.htacess`` file instead (which worked for me last time I tried): 
+In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above, try to replace the following code in your ``.htacess`` file instead (which worked for me when I tried): 
 ```bash
 <IfModule mod_rewrite.c>
 RewriteEngine On
