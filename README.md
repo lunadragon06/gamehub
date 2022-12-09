@@ -7,7 +7,7 @@ I used one of my WordPress API which I have had since 1st year at Noroff Vocatio
 Live site to this project does currently not exsist, but we can run it locally on our computers by following the installation guidelines below 👇
 ### This project contains 🔍
 - [x] An array of games from homepage. 
-- [x] A single game is retrieved by a parameter (id). Each result are linked to a detail page, passing a parameter in the URL. 
+- [x] A single game is retrieved by a parameter (id). Each result are linked to a detail page, passing a parameter in URL. 
 - [x] One of the forms are making a login request to a Wordpress API with JWT plugin installed.
   - If the login is unsuccessful, an error message will be displayed above the login form. 
   - And if the login is successful, we will be redirected to an admin page (route).
