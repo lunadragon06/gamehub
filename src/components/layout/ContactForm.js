@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import Heading from "../layout/Heading"; 
+import Heading from "../layout/typography/Heading"; 
 
 export default function ContactForm() {
     function sendEmail(e) {
