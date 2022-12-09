@@ -1,12 +1,12 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import SubHeading from "../layout/typography/SubHeading";
-import { Link } from "react-router-dom";
 
 // Make decimals display from the API 
 function insertDecimal(num) {
 	return (num / 100).toFixed(2);
 } 
-// to test if it's working as desired and expected 
+// test if it's working as desired and expected with one of APIs examples 
 console.log(insertDecimal(1982));
 
 function GameItem({ id, name, images, prices }) {
