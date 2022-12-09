@@ -1,6 +1,6 @@
 import { API } from "../../constants/api";
 import axios from "axios";
-import Categories from "../games/Categories";
+import Categories from "../games/featured/Categories";
 import ErrorMessage from "../../common/ErrorMessage";
 import GameItem from "./GameItem";
 import Heading from "../layout/Heading";
@@ -37,7 +37,6 @@ function GameList() {
 	if (loading) {
 		return <Loader />;
 	}
-
 	if (error) {
 		return <ErrorMessage message={`Error: ${error}`} />;
 	}
