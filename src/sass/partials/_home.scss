@@ -1,5 +1,5 @@
 .games {
-    display: grid;
+    display: $--content-layout;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin-top: 2rem;
@@ -13,7 +13,7 @@
 }
 
 .game:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: get(ui-color);
 }
 
 .game__col {
@@ -31,11 +31,11 @@
 } 
 
 .category, .card__tag {
-    background: #B200B2;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    color: white;
-    font-family: 'Work Sans', sans-serif;
+    background: get(primary-color);
+    border: $--no-decor;
+    box-shadow: get(ui-color);
+    color: get(asset-color);
+    font-family: $--primary-font;
     margin: 1.5rem 0rem 1rem;
     padding: .75rem 1.5rem;
     text-transform: uppercase;
@@ -46,81 +46,12 @@
     margin-top: 2.5rem;
 }
 
-h2 {
-    font-size: 20px;
-    font-weight: normal;
-    padding: .5rem 1rem 1.5rem;
-}
-
 .pricetag {
     font-size: 18px;
-}
-
-img {
-    height: 375px;
-    object-fit: cover;
-}
-
-.error-message, 
-.form-error, 
-.invalid {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 100%;
-}
-
-.loader {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border-top: 3px solid #FFF;
-    border-right: 3px solid transparent;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    display: inline-block;
-    position: relative;
-    left: 50%; 
-    transform: translateX(-50%);
-  }
-  
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  } 
-
-.error-message, .form-error, .invalid {
-    background: #ffdfe5;
-    border: 1px solid #f8a1af; 
-    color: #db1838;
-}
-
-@media (max-width: 1400px) {
-    img {
-        height: 450px;
-    }
-}
-
-@media (max-width: 1280px) {
-    img {
-        height: 400px;
-    }
-}
-
-@media (max-width: 1024px) {
-    img {
-        height: 450px;
-    }
 }
 
 @media (max-width: 768px) {
     .games {
         grid-template-columns: 1fr;
-    }
-    img {
-        height: auto;
     }
 }
