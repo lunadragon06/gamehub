@@ -4,7 +4,7 @@ import Categories from "../games/Categories";
 import ErrorMessage from "../../common/ErrorMessage";
 import GameItem from "./GameItem";
 import Heading from "../layout/Heading";
-import Loader from "../layout/Loader";
+import Loader from "../layout/ui/Loader";
 import {useState, useEffect} from "react";
 
 const url = API;
