@@ -2,7 +2,7 @@ import axios from "axios";
 import AuthContext from "../../context/authContext";
 import { BASE_URL, TOKEN_PATH } from "../../constants/data";
 import FormError from "../../common/FormError";
-import Heading from '../layout/Heading';
+import Heading from '../layout/typography/Heading';
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
