@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 2.5rem 3rem 4rem;
-    width: 100%;
+    width: $--full-size;
   }
 
   @media (max-width: 1024px) {
@@ -33,6 +33,6 @@
         flex-direction: column;
     }
     .card img {
-        width: 100%;
+        width: $--full-size;
     }
 }
