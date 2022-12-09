@@ -30,7 +30,8 @@
     padding: .5rem 1rem 1rem;
 } 
 
-.category, .card__tag {
+.category, 
+.card__tag {
     background: get(primary-color);
     border: $--no-decor;
     box-shadow: get(ui-color);
