@@ -1,3 +1,4 @@
+import * as yup from "yup";
 import axios from "axios";
 import AuthContext from "../../context/authContext";
 import { BASE_URL, TOKEN_PATH } from "../../constants/data";
@@ -6,7 +7,6 @@ import Heading from '../layout/typography/Heading';
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
-import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const url = BASE_URL + TOKEN_PATH;
@@ -28,12 +28,11 @@ export default function LoginForm() {
 
 	// eslint-disable-next-line
 	const [auth, setAuth] = useContext(AuthContext);
+	console.log(auth);
 
 	async function onSubmit(data) {
 		setSubmitting(true);
 		setLoginError(null);
-
-		console.log(data);
 
 		try {
 			const response = await axios.post(url, data);
@@ -55,12 +54,16 @@ export default function LoginForm() {
 				<Heading content="Login" />
 				<fieldset className="form-container" disabled={submitting}>
 					<div>
-					    <label>Username or Email</label>
+					    <label>
+							Username or Email
+						</label>
 						<input name="username" placeholder="Username" {...register("username")} />
 						{errors.username && <FormError>{errors.username.message}</FormError>}
 					</div>
 					<div>
-					    <label>Password</label>
+					    <label>
+							Password
+						</label>
 						<input name="password" placeholder="Password" {...register("password")} type="password" />
 						{errors.password && <FormError>{errors.password.message}</FormError>}
 					</div>
