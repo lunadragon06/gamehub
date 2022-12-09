@@ -38,7 +38,8 @@ RewriteRule . /your-project-name-here/index.php [L]
 ```
 Replace ``your-project-name-here`` with the actual name of your installed WP folder, which you've named yourself before your WP installation. 
 ## 🚀 Getting Started
-<b>Note:</b> It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. 
+### Node version 🖥️
+It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. 
 1. Clone the repo from here:
 ```bash
 https://github.com/lunadragon06/gamehub.git
@@ -60,15 +61,14 @@ npm run start
 ## 🔗 Contributing
 To contribute to this project, please create a new branch that can be reviewed and merged.
 ## 🏅 License
-The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. Or it can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Obs!</b> - the link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link.  
+The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. Or it can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Note:</b> The link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link.  
 ## 🤙 Contact me
 [LinkedIn](https://www.linkedin.com/in/monika-lie/)
 <br>
 [Student email](mailto:monlie16236@stud.noroff.no) 
 ## 🗨️ Acknowledgments
-I would like to make this opportunity to thank [Tiffany](https://www.github.com/utvaer) for helping me out at the time I was working on this project with JWT AUTH for WordPress REST API and [Priscila](https://www.github.com/pkderlam87) to show me how to use and make YUP validations when I was building this login form.
+I would like to make this opportunity to thank [Tiffany](https://www.github.com/utvaer) for helping me out at the time I was working on this project with JWT AUTH for WordPress REST API and [Priscila](https://www.github.com/pkderlam87) to show me how to use and make React Hook Form & YUP validations when I was building login form.
 <br>
 <br>
-I have these wonderful girls to thank for the fact that I have managed to pass and finish this JavaScript Framework Course Assignment, in addition to improve a great deal my learning curve experience while learning and practicing React 💗
-<br>
-<br>
+I have these wonderful girls to thank for the fact that I have managed to pass and finish this JavaScript Framework Course Assignment, in addition to improve a great deal my learning curve experience 💗
+<br><br>
