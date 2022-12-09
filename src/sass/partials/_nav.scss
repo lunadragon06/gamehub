@@ -13,155 +13,154 @@
 }
 
 nav {
-    height: 65px;
-    letter-spacing: 2.5px;
-    padding: 21px 0 21px 21px;
-    width: 100%;
-    background: #0F0C26;
+  background: get(content-color);
+  height: 65px;
+  letter-spacing: 2.5px;
+  padding: 21px 0 21px 21px;
+  width: $--full-size;
 }
   
-  nav div {
-    display: inline;
-  }
+nav div {
+  display: inline;
+}
   
+.wordmark {
+  display: inline-block;
+  font-size: 24px;
+}
+  
+.menu {
+  float: right;
+  list-style-type: none;
+  position: relative;
+  transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85);
+}
+  
+.active {
+  font-weight: bold;
+}
+  
+.menu li {
+  cursor: pointer;
+  display: inline;
+  margin-right: 3rem;
+}
+  
+.menu li:hover {
+  text-decoration: underline;
+}
+  
+.menu li:hover::before {
+  width: 49px;
+}
+  
+.menu li:nth-child(3):hover::before {
+  width: 63px;
+}
+  
+input[type=checkbox] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+  
+nav label {
+  background: get(secondary-color);
+  cursor: pointer;
+  display: $--no-decor;
+  height: 65px;
+  position: absolute;
+  right: $--unset;
+  top: $--unset;
+  width: 65px;
+  z-index: 1;
+}
+  
+nav > label > span {
+  background: get(asset-color);
+  border-radius: 1px;
+  display: block;
+  height: 4px;
+  margin: 4px auto;
+  transition: .5s;
+  width: 25px;
+}
+  
+nav > label > span:nth-child(1) {
+  margin-top: 25px;
+}
+  
+input[type=checkbox]:checked ~ .menu {
+  top: $--unset;
+}
+  
+input[type=checkbox]:checked ~ label span {
+  background: get(asset-color);
+}
+  
+input[type=checkbox]:checked ~ label span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+  
+input[type=checkbox]:checked ~ label span:nth-child(2) {
+  opacity: $--unset;
+}
+  
+input[type=checkbox]:checked ~ label span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.logbtn {
+  background: get(secondary-color);
+  margin-left: 1rem;
+  margin-right: 0 !important;
+  padding: 1.9rem 2.3rem 1.3rem !important;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.logbtn:hover {
+  background: get(tertiary-color);
+  text-decoration: $--no-decor !important;
+}
+  
+@media (max-width: 768px) {
   .wordmark {
-    display: inline-block;
-    font-size: 24px;
+    display: $--no-decor;
   }
-  
+  .logo {
+    height: 25px;
+    width: 45px;
+  }
   .menu {
-    position: relative;
-    float: right;
-    list-style-type: none;
-    transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85);
-  
+    align-items: center;
+    background: get(secondary-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: $--unset;
+    margin: $--unset;
+    position: absolute;
+    top: -100vh;
+    width: $--full-size;
   }
-  
-  .active {
-    font-weight: bold;
-  }
-  
   .menu li {
-    display: inline;
-    cursor: pointer;
-    margin-right: 3rem;
+    color: get(asset-color);
+    font-size: 1.5em;
+    margin: 20px;
   }
-  
-  .menu li:hover {
-    text-decoration: underline;
-  }
-  
-  .menu li:hover::before {
-    width: 49px;
-  }
-  
-  .menu li:nth-child(3):hover::before {
-    width: 63px;
-  }
-  
-  input[type=checkbox] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  
-  nav label {
-    position: absolute;
-    display: none;
-    top: 0;
-    right: 0;
-    height: 65px;
-    width: 65px;
-    background: rgba(61, 38, 211, 0.75);
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  nav > label > span {
+  nav .hamburger {
     display: block;
-    margin: 4px auto;
-    height: 4px;
-    width: 25px;
-    border-radius: 1px;
-    background: #fff;
-    transition: 0.5s;
   }
-  
-  nav > label > span:nth-child(1) {
-    margin-top: 25px;
-  }
-  
-  input[type=checkbox]:checked ~ .menu {
-    top: 0;
-  }
-  
-  input[type=checkbox]:checked ~ label span {
-    background: #fff;
-  }
-  
-  input[type=checkbox]:checked ~ label span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  input[type=checkbox]:checked ~ label span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  input[type=checkbox]:checked ~ label span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
   .logbtn {
-    background: rgba(61, 38, 211, 0.75);
-      margin-left: 1rem;
-      margin-right: 0 !important;
-      padding: 1.9rem 2.3rem 1.3rem !important;
-      text-transform: uppercase;
-      transition: .5s;
+    background: get(primary-color);
+    margin-right: 0.5rem !important;
+    margin-top: 2rem !important;
+    padding: 1rem 4rem !important;
   }
-
-  .logbtn:hover {
-      background: #8C0876;
-      text-decoration: none !important;
+  #userlink {
+    margin: -1rem -4rem;
+    padding: 1.5rem 6rem;
   }
-  
-  @media (max-width: 768px) {
-    .wordmark {
-      display: none;
-    }
-    .logo {
-      height: 25px;
-      width: 45px;
-    }
-    .menu {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      top: -100vh;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      background: #3D26D3;
-    }
-    .menu li {
-      margin: 20px;
-      font-size: 1.5em;
-      color: #fff;
-    }
-    nav .hamburger {
-      display: block;
-    }
-    .logbtn {
-      background: #B200B2;
-        margin-right: 0.5rem !important;
-        margin-top: 2rem !important;
-        padding: 1rem 4rem !important;
-    }
-    #userlink {
-      margin: -1rem -4rem;
-      padding: 1.5rem 6rem;
-    }
-  }
+}
