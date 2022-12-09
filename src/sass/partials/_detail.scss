@@ -6,16 +6,19 @@
     line-height: 24.5px;
   }
 
-  .card h1 {
+  .card 
+  h1 {
     font-size: 30px;
   }
 
-  .card img {
+  .card 
+  img {
     height: auto;
     width: 25%;
   }
 
-  .card p {
+  .card 
+  p {
     margin-top: 2rem;
   }
 
@@ -32,7 +35,8 @@
     .card {
         flex-direction: column;
     }
-    .card img {
+    .card 
+    img {
         width: $--full-size;
     }
 }
