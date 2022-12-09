@@ -3,7 +3,7 @@ import axios from "axios";
 import Categories from "../games/featured/Categories";
 import ErrorMessage from "../../common/ErrorMessage";
 import GameItem from "./GameItem";
-import Heading from "../layout/Heading";
+import Heading from "../layout/typography/Heading";
 import Loader from "../layout/ui/Loader";
 import {useState, useEffect} from "react";
 
