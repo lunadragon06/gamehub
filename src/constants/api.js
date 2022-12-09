@@ -1,1 +1,1 @@
-export const API = "https://tgh.monikalie.no/wp-json/wc/store/products";
+export const API = "https://gamehub.monikalie.no/wp-json/wc/store/products";
