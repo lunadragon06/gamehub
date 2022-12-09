@@ -1,7 +1,7 @@
 import { API } from "../../constants/api";
 import axios from "axios";
 import ErrorMessage from "../../common/ErrorMessage";
-import Heading from '../../components/layout/Heading';
+import Heading from '../layout/typography/Heading';
 import Loader from "../layout/ui/Loader";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
