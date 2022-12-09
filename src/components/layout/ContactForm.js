@@ -1,5 +1,5 @@
-import Heading from "../layout/Heading";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com";
+import Heading from "../layout/Heading"; 
 
 export default function ContactForm() {
     function sendEmail(e) {
@@ -19,22 +19,32 @@ export default function ContactForm() {
     return (
         <form onSubmit={sendEmail}>
             <Heading content="Contact" />
-            <p style={{ margin: '1rem 0 3rem', }} >Write your feedback here!</p>
+            <p style={{ margin: '1rem 0 3rem', }} >
+                Write your feedback here!
+            </p>
             <section className="form-container">
             <div>
-                <label>First name</label>
+                <label>
+                    First name
+                </label>
                 <input name="first_name" required />
             </div>
             <div>
-                <label>Last name</label>
-                <input name="last_name" />
+                <label>
+                    Last name
+                </label>
+                <input name="last_name" required />
             </div>
             <div>
-                <label>Email</label>
+                <label>
+                    Email
+                </label>
                 <input name="user_email" required />
             </div>
             <div>
-                <label>Message</label>
+                <label>
+                    Message
+                </label>
                 <textarea name="message" required />
             </div>
             <div className="button-wrapper">
