@@ -8,12 +8,12 @@
 #userlink {
   display: inline-block;
   position: relative;
-  padding: 2rem 2rem 1.3rem;
+  padding: 1.95rem 2rem 1.3rem;
   margin: -2rem -2.3rem 0;
 }
 
 nav {
-    height: 70px;
+    height: 65px;
     letter-spacing: 2.5px;
     padding: 21px 0 21px 21px;
     width: 100%;
@@ -31,7 +31,6 @@ nav {
   
   .menu {
     position: relative;
-    margin-top: 5px;
     float: right;
     list-style-type: none;
     transition: top 0.5s cubic-bezier(0.3, 0.1, 0.3, 0.85);
@@ -71,8 +70,8 @@ nav {
     display: none;
     top: 0;
     right: 0;
-    height: 70px;
-    width: 70px;
+    height: 65px;
+    width: 65px;
     background: rgba(61, 38, 211, 0.75);
     cursor: pointer;
     z-index: 1;
