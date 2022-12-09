@@ -1,12 +1,7 @@
-input, select, textarea {
-  box-sizing: border-box;
-  margin-bottom: 1.5rem;
-  margin-top: 6px;
-  padding: 12px;
-  resize: vertical;
-  width: $--full-size;
+.button-wrapper {
+  margin-top: 1rem;
 }
-  
+
 fieldset {
   border: $--no-decor;
 }
@@ -21,13 +16,20 @@ form {
   margin-top: 2rem;
 }
 
+input, 
+select, 
+textarea {
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  margin-top: 6px;
+  padding: 12px;
+  resize: vertical;
+  width: $--full-size;
+}
+
 textarea {
   font-family: $--primary-font;
   min-height: 150px;
-}
-
-.button-wrapper {
-  margin-top: 1rem;
 }
 
 .register {
