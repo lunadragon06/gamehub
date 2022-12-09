@@ -4,15 +4,15 @@
 ## 📜 Description
 I used one of my WordPress API which I have had since 1st year at Noroff Vocational School while working on this assignment and practiced Reactjs throughout this entire course. In short, this API belongs to my cross-course project which I have used and still am using when I'm practicing the core coding languages HTML, CSS, SASS/SCSS and JavaScript in addition to ReactJS and NEXTjs. 
 <br><br>
-Live site to this project does currently not exsist, but we can run it locally on our computers by following the installation guidelines below.
-### This project contains: 
+Live site to this project does currently not exsist, but we can run it locally on our computers by following the installation guidelines below 👇
+### This project contains 🔍
 - [x] An array of games from homepage. 
 - [x] A single game is retrieved by a parameter (id). Each result are linked to a detail page, passing a parameter in the URL. 
 - [x] One of the forms are making a login request to a Wordpress API with JWT plugin installed.
   - If the login is unsuccessful, an error message will be displayed above the login form. 
   - And if the login is successful, we will be redirected to an admin page (route).
 - [x] Simple contact form where inputted contact info will be sent directly to my professional (private) email, which was added with [EmailJS](https://blog.openreplay.com/sending-emails-from-react-with-emailjs/).
-- [ ] New functionalities and overall improvements for this website are considered to be done during 2023 sometime after Portfolio 2's marked
+- [ ] New functionalities and overall improvements for this website are considered to be done during 2023 sometime after Portfolio 2's marked.
 #### Login info 🔐
 Please use your own WP local installation to be able to use admin functionality to this site. I used [this guide](https://themeisle.com/blog/install-xampp-and-wordpress-locally/) first before I configured my JWT auth in Wordpress REST API by following [this video tutorial](https://vimeo.com/520281229/d3f527f43e) to be set as authorised, and in this case be able to, for instance, using login form. 
 ## 🔧 Build With
