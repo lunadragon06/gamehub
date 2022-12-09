@@ -13,7 +13,7 @@ Live site to this project does currently not exsist, but we can run it locally o
   - If the login is unsuccessful, an error message will be displayed above the login form. 
   - And if the login is successful, we will be redirected to an admin page (route).
 - [x] Simple contact form where inputted contact info will be sent directly to my professional (private) email, which was added with [EmailJS](https://blog.openreplay.com/sending-emails-from-react-with-emailjs/).
-- [ ] New functionalities and overall improvements for this website are considered to be done during 2023 sometime after Portfolio 2's marked.
+- [ ] New functionalities and overall improvements for this website are considered to be done during 2023.
 #### Login info 🔐
 Please use your own WP local installation to be able to use admin functionality to this site. I used [this guide](https://themeisle.com/blog/install-xampp-and-wordpress-locally/) first before I configured my JWT auth in Wordpress REST API by following [this video tutorial](https://vimeo.com/520281229/d3f527f43e) to be set as authorised, and in this case be able to, for instance, using login form. 
 ## 🔧 Build With
