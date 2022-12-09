@@ -1,28 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+$colors: (
+  asset-color: #FFFFFF,
+  background-color: #181436, 
+  content-color: #0F0C26,
+  primary-color: #B200B2,
+  secondary-color: #3D26D3,
+  tertiary-color: #F205CB,
+  ui-color: 0 4px 8px 0 rgba(12, 0, 14, 0.5),
+);
+
+@function get($color) {
+  @return map-get($colors, $color);
+}
+
+$--full-size: 100%;
+$--content-layout: grid;
+$--no-decor: none;
+$--primary-font: 'Work Sans', sans-serif; 
+$--unset: 0;
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: $--unset;
+  padding: $--unset;
 }
   
 html,
 body {
-	height: 100%;
+	height: $--full-size;
 }
   
 a {
-  color: #fff;
-  text-decoration: none;
+  color: get(asset-color);
+  text-decoration: $--no-decor;
 }
   
 body {
-  background: #181436;
-  color: white;
+  background: get(background-color);
+  color: get(asset-color);
   display: flex;
   flex-direction: column;
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $--primary-font;
+  margin: $--unset;
 }
 
 .container {
@@ -31,14 +51,83 @@ body {
   padding: 3.25rem 12.75rem;
 }
 
+.error-message, 
+.form-error, 
+.invalid {
+  background: #ffdfe5;
+  border: 1px solid #f8a1af; 
+  color: #db1838;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: $--full-size;
+}
+
 footer {
+  min-height: $--unset;
   padding: 1rem 2rem 3rem;
-	min-height: 0;
   text-align: center;
 }
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: .5rem 1rem 1.5rem;
+}
+
+img {
+  height: 375px;
+  object-fit: cover;
+}
+
+.loader {
+  animation: rotation 1s linear infinite;
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  border-top: 3px solid get(asset-color);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 48px;
+  left: 50%;
+  position: relative; 
+  transform: translateX(-50%);
+  width: 48px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
 
 @media (max-width: 1600px) {
   .container {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 1280px) {
+  img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    height: auto;
   }
 }
