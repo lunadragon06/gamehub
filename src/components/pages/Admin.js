@@ -1,5 +1,5 @@
 import AuthContext from "../../context/authContext";
-import Heading from "../layout/Heading";
+import Heading from "../layout/typography/Heading";
 import { useContext } from 'react';
 
 export default function AdminPage() {
