@@ -1,55 +1,54 @@
 input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 1.5rem;
-    resize: vertical;
-  }
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  margin-top: 6px;
+  padding: 12px;
+  resize: vertical;
+  width: $--full-size;
+}
   
-  fieldset {
-      border: none;
-  }
+fieldset {
+  border: $--no-decor;
+}
 
+form {
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+
+textarea {
+  font-family: 'Work Sans', sans-serif;
+  min-height: 150px;
+}
+
+.button-wrapper {
+  margin-top: 1rem;
+}
+
+.register {
+  background-color: get(primary-color);
+  border: $--no-decor;
+  color: get(asset-color);
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  padding: 25px 20px;
+  text-transform: uppercase;
+  transition: .5s;
+  width: $--full-size;
+ }
+
+.register:hover {
+  background: get(tertiary-color);
+}
+
+@media (max-width: 1280px) {
   form {
-      letter-spacing: 1px;
-      margin: 0 auto;
-      width: 50%;
+    width: $--full-size;
   }
-
-  .form-container {
-      margin-top: 2rem;
-  }
-
-  textarea {
-    font-family: 'Work Sans', sans-serif;
-      min-height: 150px;
-  }
-
-  .button-wrapper {
-      margin-top: 1rem;
-  }
-
-  .register {
-    background-color: #B200B2;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 2.5px;
-    padding: 25px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-transform: uppercase;
-    transition: .5s;
-  }
-
-  .register:hover {
-    background-color: #F205CB;
-  }
-
-  @media (max-width: 1280px) {
-    form {
-        width: 100%;
-    }
-  }
+}
