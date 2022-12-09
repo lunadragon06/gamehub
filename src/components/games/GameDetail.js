@@ -57,7 +57,7 @@ function GameDetail() {
 				<article className="card__content">
 				    <div>
 				        <Heading content={game.name} />
-					    <span className="card__tag">{game.categories[0].name}</span>
+					    <span className="category">{game.categories[0].name}</span>
 					</div>
 			        <p dangerouslySetInnerHTML={{ __html: game.description }} />
 				</article>
