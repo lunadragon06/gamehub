@@ -30,21 +30,15 @@
     padding: .5rem 1rem 1rem;
 } 
 
-.category, 
-.card__tag {
+.category {
     background: get(primary-color);
     border: $--no-decor;
-    box-shadow: get(ui-color);
     color: get(asset-color);
+    display: inline-block;
     font-family: $--primary-font;
     margin: 1.5rem 0rem 1rem;
     padding: .75rem 1.5rem;
     text-transform: uppercase;
-}
-
-.card__tag {
-    display: inline-block;
-    margin-top: 2.5rem;
 }
 
 .pricetag {
