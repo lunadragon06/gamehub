@@ -18,28 +18,21 @@ Live site to this project does currently not exsist, but we can run it locally o
 Please use your own WP local installation to be able to use admin functionality to this site. I used [this guide](https://themeisle.com/blog/install-xampp-and-wordpress-locally/) first before I configured my JWT auth in Wordpress REST API by following [this video tutorial](https://vimeo.com/520281229/d3f527f43e) to be set as authorised, and in this case be able to, for instance, using login form. 
 ## 🔧 Build With
 I used [JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/) among these following tech packages and WordPress plugin(s) to build this React Web Application:
-- [FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
 - [NPM](https://www.npmjs.com/)
 - [React.js](https://reactjs.org/)
+- [React FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
 - [SASS](https://sass-lang.com/)
 - [WooCommerce](https://wordpress.org/plugins/woocommerce/) (API json only) 
-## 👩‍💻 Backend
-In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above, try to replace the following code in your ``.htacess`` file (which worked for me when I tried): 
-```bash
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /your-project-name-here/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /your-project-name-here/index.php [L]
-</IfModule>
-```
-Replace ``your-project-name-here`` with the actual name of your installed WP folder, which you've named yourself before your WP installation. 
+## ✎ Update information 
+Minimal changes have been made to this project, but the most significant changes that were managed to make are the following:
++ Used an updated version of one of my WordPress API, since the previous one doesn't exist anymore. 
++ Changed the entire color spectrum to the page that could more clearly represents the project's theme. 
++ Tried to also apply in addition core Sass concepts (variables), where I will later on add BEM-classes to practice as well. 
+## 🏅 License
+The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. Or it can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Note:</b> The link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link. 
 ## 🚀 Getting Started
 ### Node version 🖥️
-It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. 
+It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. If you also need to know what node version I've used, link to its installment can be found in my other project's repo [here](https://github.com/lunadragon06/torfs-art-gallery/edit/master/). 
 1. Clone the repo from here:
 ```bash
 https://github.com/lunadragon06/gamehub.git
@@ -58,17 +51,29 @@ To run the app after installation of it is done, run this command in your termin
 npm run start
 ```
 ..and you should be good to go!
+## 👩‍💻 Backend
+In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above 👆, try to replace the following code in your ``.htacess`` file (which worked for me when I tried): 
+```bash
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /your-project-name-here/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /your-project-name-here/index.php [L]
+</IfModule>
+```
+Replace ``your-project-name-here`` with the actual name of your installed WP folder, which you've named yourself before your WP installation. 
 ## 🔗 Contributing
-To contribute to this project, please create a new branch that can be reviewed and merged.
-## 🏅 License
-The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. Or it can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Note:</b> The link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link.  
-## 🤙 Contact me
-[LinkedIn](https://www.linkedin.com/in/monika-lie/)
-<br>
-[Student email](mailto:monlie16236@stud.noroff.no) 
+To contribute to this project, you can fork this project or please create a new branch that can be reviewed and merged. 
 ## 🗨️ Acknowledgments
 I would like to make this opportunity to thank [Tiffany](https://www.github.com/utvaer) for helping me out at the time I was working on this project with JWT AUTH for WordPress REST API and [Priscila](https://www.github.com/pkderlam87) to show me how to use and make React Hook Form & YUP validations when I was building login form.
 <br>
 <br>
 I have these wonderful girls to thank for the fact that I have managed to pass and finish this JavaScript Framework Course Assignment, in addition to improve a great deal my learning curve experience 💗
+## 🤙 Contact me
+[LinkedIn](https://www.linkedin.com/in/monika-lie/)
+<br>
+[Student email](mailto:monlie16236@stud.noroff.no) 
 <br><br>
