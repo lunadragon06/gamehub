@@ -27,12 +27,11 @@ I used [JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-au
 Minimal changes have been made to this project, but the most significant changes that were managed to make are the following:
 + Used an updated version of one of my WordPress API, since the previous one doesn't exist anymore. 
 + Changed the entire color spectrum to the page that could more clearly represents the project's theme. 
-+ Tried to also apply in addition core Sass concepts (variables), where I will later on add BEM-classes to practice as well. 
 ## 🏅 License
-The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. Or it can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Note:</b> The link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link. 
+The project's original source and unchanged version of it can be obtained from the ``master`` branch in this repo. It can also be found taken from my other GitHub account [here](https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-LunaDragon666). <b>Note:</b> The link to the original repo may be set on private by [Noroff](https://github.com/Noroff-FEU-Assignments/) and only Noroff staff, apart from myself, will be able to get access to this particular shared link. 
 ## 🚀 Getting Started
 ### Node version 🖥️
-It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. If you also need to know what node version I've used, link to its installment can be found in my other project's repo [here](https://github.com/lunadragon06/torfs-art-gallery/edit/master/). 
+It is recommended to use node version <= 15 before we start with this project installment in case this should be necessary to be able to run the project successfully. If you also need to know what node version I've used, link to its installment can be found in my other project's repo [here](https://github.com/lunadragon06/torfs-art-gallery/tree/master). 
 1. Clone the repo from here:
 ```bash
 https://github.com/lunadragon06/gamehub.git
@@ -52,7 +51,7 @@ npm run start
 ```
 ..and you should be good to go!
 ## 👩‍💻 Backend
-In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above 👆, try to replace the following code in your ``.htacess`` file (which worked for me when I tried): 
+In case you're having trouble making JWT Authentication for WP REST API working for you after following the guidelines from above 👆 try to replace the following code in your ``.htacess`` file (which worked for me when I tried): 
 ```bash
 <IfModule mod_rewrite.c>
 RewriteEngine On
