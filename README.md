@@ -1,7 +1,7 @@
 # 🎮 JS Frameworks CA - GameHub 
 <img src="src/assets/screenshot.png" alt="GameHub website mockup.">
 
-## 📜 Description updated 
+## 📜 Description
 I used one of my WordPress API which I have had since 1st year at Noroff Vocational School while working on this assignment and practiced Reactjs throughout this entire course. In short, this API belongs to my cross-course project which I have used and still am using when I'm practicing the core coding languages HTML, CSS, SASS/SCSS and JavaScript in addition to ReactJS and NEXTjs. 
 <br>
 <br>
